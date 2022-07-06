@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Application {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int competitorsTime1 = scanner.nextInt();
+        int competitorsTime2 = scanner.nextInt();
+        int competitorsTime3 = scanner.nextInt();
+
+        int totalSeconds = competitorsTime1 + competitorsTime2 + competitorsTime3;
+
+        int minutes = totalSeconds / 60;
+        int seconds = totalSeconds % 60;
+
+        System.out.printf("%d:%02d", minutes, seconds);
+    }
+}
